@@ -25,4 +25,4 @@ assignment(s), I will leave the further customization for the future.
 
 Links:
 
-GitHub Link: https://tharithsovann.github.io/gui_assignments/index_hw5.html
+GitHub Link: https://tharithsovann.github.io/gui_assignments/hw5/index_hw5.html
