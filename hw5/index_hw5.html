@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+    Tharith Sovann
+    University of Massachusetts Lowell
+    Email: tharith_sovann@student.uml.edu
+    Class: COMP.4610-201 GUI Programming I HW5
+    This website was created to implement a dynamic multiplication
+    table as practice for using javascript in conjunction with
+    html and css.
+    I had a lot of help from:
+    1) w3schools for html, css and javascript help
+    2) links and videos from assignment PDF
+    3) stackoverflow for debugging javascript
+    Copyright (c) October 27th, 2020 Tharith Sovann. All rights reserved.
+    May be freely copied or excerpted for educational purposes with credit to
+    author.
+    Created on 10/27/2020
+-->
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mulTable.css">
+
+  </head>
+
+  <body>
+
+    <h1> Dynamic Multiplication Table </h1>
+    <h3> Please enter desired rows and column range between -100 to 100. </h3>
+
+    <form class="container">
+
+      <div>
+        <label for="minimumRowValue">Minimum Row Value</label><br>
+        <input type="value" id="minRowVal">
+      </div>
+
+      <div>
+        <label for="maximumRowValue">Maximum Row Value</label><br>
+        <input type="value" id="maxRowVal">
+      </div>
+
+      <div>
+        <label for="minimumColValue">Minimum Column Value</label><br>
+        <input type="value" id="minColVal">
+      </div>
+
+      <div>
+        <label for="maximumColValue">Maximum Column Value</label><br>
+        <input type="value" id="maxColVal">
+      </div>
+
+      <div class="box">
+        <button type="submit" class="btn" onclick="generateTable()">Submit</button>
+      </div>
+
+    </form>
+
+    <p id="error-box"> </p>
+    <p id="error-box2"> </p>
+    <p id="error-box3"> </p>
+
+    <table id="multable"> </table>
+    <script src="js/mulTable.js"></script>
+
+  </body>
+</html>

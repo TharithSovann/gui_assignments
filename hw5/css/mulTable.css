@@ -1,0 +1,81 @@
+/*
+    Tharith Sovann
+    University of Massachusetts Lowell
+    Email: tharith_sovann@student.uml.edu
+    Class: COMP.4610-201 GUI Programming I HW5
+    Copyright (c) October 27th, 2020 Tharith Sovann. All rights reserved.
+    May be freely copied or excerpted for educational purposes with credit to
+    author.
+    Created on 10/27/2020
+*/
+h3 {
+  color: blue;
+}
+
+/* makes the web page background color gray, might improve the design for later designs */
+body {
+  text-align: center;
+  width: 100%;
+  background-color: #B8B8B8;
+}
+
+/* separates the button from the forms a bit */
+.box {
+  margin-top: 1em;
+}
+
+/* situates the table to be in the middle */
+#multable {
+  color: black;
+  font-size: 12pt;
+  text-align: center;
+  margin: auto;
+}
+
+/* makes the error messages red */
+#error-box {
+  color: red;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* makes the error messages red */
+#error-box2 {
+  color: red;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* makes the error messages red */
+#error-box3 {
+  color: red;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* makes the background black so dividers appear for easier reading */
+table {
+  background-color: black;
+  margin: 0 auto;
+}
+
+/* colors the table cells white */
+td {
+  background-color: white;
+}
+
+/* creates alternating gray columns for easier reading */
+td:nth-child(odd) {
+  background-color: #EAEAEA;
+}
+
+/* https://css-tricks.com/useful-nth-child-recipies/ */
+/* colors the first column skyblue */
+td:first-child {
+  background-color: skyblue;
+}
+
+/*colors the first row skyblue*/
+tr:first-child > td {
+  background-color: skyblue;
+}
