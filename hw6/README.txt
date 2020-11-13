@@ -18,4 +18,4 @@ the left.
 
 Links:
 
-GitHub Link: https://tharithsovann.github.io/gui_assignments/index_hw5.html
+GitHub Link: https://tharithsovann.github.io/gui_assignments/hw6/index_hw6.html
