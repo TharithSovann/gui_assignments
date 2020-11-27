@@ -74,11 +74,6 @@ $("#minColVal").val(0);
 $("#maxColVal").val(0);
 /////////////////////////////SLIDERS//////////////////////////////////
 
-var input1 = document.querySelector('#minRowVal');
-var input2 = document.querySelector('#maxRowVal');
-var input3 = document.querySelector('#minColVal');
-var input4 = document.querySelector('#maxColVal');
-
 //---------Updates the table live based on slider movement---------
 minRowVal.addEventListener('input', function()
 {
@@ -222,7 +217,7 @@ function generateTable() {
       temp = maxColVal;
       maxColVal = minColVal;
       minColVal = temp;
-      document.getElementById("error-box2").innerHTML = "Min and max col values swapped";
+      document.getElementById("error-box3").innerHTML = "Min and max col values swapped";
     }
   }
 
