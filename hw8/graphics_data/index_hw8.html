@@ -1,0 +1,98 @@
+<!doctype html>
+<!--
+    Tharith Sovann
+    University of Massachusetts Lowell
+    Email: tharith_sovann@student.uml.edu
+    Class: COMP.4610-201 GUI Programming I HW7
+    This website was created to implement a dynamic multiplication
+    with jquery ui widgets, this has sliders.
+    I had a lot of help from:
+    1) w3schools for html, css and javascript help
+    2) links and videos from assignment PDF
+    3) stackoverflow for debugging javascript
+    Copyright (c) November 25th, 2020 Tharith Sovann. All rights reserved.
+    May be freely copied or excerpted for educational purposes with credit to
+    author.
+    Created on 11/22/2020
+-->
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+    <script src="js/scrabble.js"></script>
+
+  </head>
+
+  <body>
+    <h1> My Little Scrabble </h1>
+    <div id="indicators" class="row ui-droppable d-flex justify-content-center">
+
+      <div id="score" class="ui-widget-content">
+        <h>Score: 0</h>
+      </div>
+
+      <div id="tilesLeft" class="ui-widget-content">
+        <h>Tiles Left: 93</h>
+      </div>
+
+    </div>
+
+    <div id="scrabbleBoard" class="row ui-droppable d-flex justify-content-center">
+      
+      <div id="letterSlot1" class="letterSlot ui-droppable" col="1">
+      </div>
+      <div id="letterSlot2" class="letterSlot ui-droppable" col="2">
+      </div>
+      <div id="letterSlot3" class="letterSlot ui-droppable" col="3">
+      </div>
+      <div id="letterSlot4" class="letterSlot ui-droppable" col="4">
+      </div>
+      <div id="letterSlot5" class="letterSlot ui-droppable" col="5">
+      </div>
+      <div id="letterSlot6" class="letterSlot ui-droppable" col="6">
+      </div>
+      <div id="letterSlot7" class="letterSlot ui-droppable" col="7">
+      </div>
+
+    </div> 
+
+    <div id="buttonsContainer">
+
+        <button id="submit-button" type="button" class="row btn btn-success" onclick="submitWord()">Submit Word</button>
+        <button id="reset-button" type="button" class="row btn btn-secondary" onclick="reset()">Restart Game</button>
+
+    </div>
+
+    <div id="rack" class="row ui-droppable d-flex justify-content-center">
+      <img id="rack_background" src="rack.png"></img>
+
+      <div id="rackContainer" class="row ui-droppable d-flex justify-content-center">
+        
+        <div id="tileSlot1" class="tileSlot ui-droppable" slot="1">
+        </div>
+        <div id="tileSlot2" class="tileSlot ui-droppable" slot="2">
+        </div>
+        <div id="tileSlot3" class="tileSlot ui-droppable" slot="3">
+        </div>
+        <div id="tileSlot4" class="tileSlot ui-droppable" slot="4">
+        </div>
+        <div id="tileSlot5" class="tileSlot ui-droppable" slot="5">
+        </div>
+        <div id="tileSlot6" class="tileSlot ui-droppable" slot="6">
+        </div>
+        <div id="tileSlot7" class="tileSlot ui-droppable" slot="7">
+        </div> 
+      
+      </div>
+
+  </body>
+</html>
