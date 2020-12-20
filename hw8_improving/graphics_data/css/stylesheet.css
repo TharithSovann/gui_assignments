@@ -65,7 +65,7 @@ body {
 #letterSlot4 {
   width: 5em;
   height: 5em;
-  background-image: url("../doubleLetterSlot.PNG");
+  background-image: url("../doubleWordSlot.PNG");
 }
 
 #letterSlot5 {
@@ -77,7 +77,7 @@ body {
 #letterSlot6 {
   width: 5em;
   height: 5em;
-  background-image: url("../emptySlot.PNG");
+  background-image: url("../doubleLetterSlot.PNG");
 }
 
 #letterSlot7 {
@@ -156,13 +156,21 @@ body {
   margin-top: 3%;
 }
 
-#indicators > h1 {
+#indicators > h {
   font-size: small;
 }
 
 #score {
   border-radius: 5em;
-  border-width: 1em;
+  border-width: 6px;
+  border-color: red;
+  background: fixed;
+  background-color: greenyellow;
+}
+
+#wordScore {
+  border-radius: 5em;
+  border-width: 6px;
   border-color: red;
   background: fixed;
   background-color: greenyellow;
@@ -170,7 +178,7 @@ body {
 
 #tilesLeft {
   border-radius: 5em;
-  border-width: 1em;
+  border-width: 6px;
   border-color: red;
   background: fixed;
   background-color: greenyellow;

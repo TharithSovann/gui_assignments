@@ -69,13 +69,20 @@ var droppedOn_id;
                     var slot_number = parseInt(droppedOn[0].attributes.col.nodeValue);
                     console.log(slot_number);
 
-                    if ( slot_number == 2 || slot_number == 4 ) {
+                    if ( slot_number == 2 || slot_number == 6 ) {
                         letterPoints *= 2;
-                        console.log("double points" + letterPoints);
+                        //console.log("double points" + letterPoints);
                     }
 
-                    gameScore += letterPoints;
-
+                    if ( `${droppedOn_id}` == "letterSlot4" ) {
+                        doubleScore = 1;
+                    }
+                    roundScore += letterPoints;
+                    if (doubleScore == 1) {
+                        $('#wordScore').text("Word Score:\n" + 2*roundScore);
+                    }
+                    else
+                        $('#wordScore').text("Word Score:\n" + roundScore);
 
                     //$( `#${droppedOn_id}` ).droppable( "option", "accept", ".no_longer_accepts" );
             }
@@ -104,6 +111,10 @@ var droppedOn_id;
     var newGame = 1;
 
     var gameScore = 0;
+    
+    var roundScore = 0;
+
+    var doubleScore = 0;
     
     /*
     -create a vector to hold all of the letter tiles
@@ -244,7 +255,7 @@ var droppedOn_id;
 
         clearBoard();
         randomTile();
-        updateIndicators(); //not working properly
+        updateIndicators(); //fix font
         nextRound();
     }
 
@@ -261,7 +272,12 @@ var droppedOn_id;
     -updates the score and tiles remaining
     */
     function updateIndicators() {
-        $('#score').text("Score:\n" + gameScore);
+
+        if ( doubleScore == 1 ) {
+            roundScore *= 2;
+        }
+        gameScore += roundScore;
+        $('#score').text("Total Score:\n" + gameScore);
         /*
         jQuery('<h1/>', {
             id: `tileFromBag${i}`,
@@ -272,6 +288,9 @@ var droppedOn_id;
         }).appendTo(`#tileSlot${i}`);*/
 
         $('#tilesLeft').text("Tiles Left:\n" + tiles.length);
+        doubleScore = 0;
+        roundScore = 0;
+        $('#wordScore').text("Word Score:\n" + roundScore);
     }
 
     /*
@@ -324,6 +343,9 @@ var droppedOn_id;
         droppedOn = (`#tileSlot${i}`);
         $(dropped).detach().css({top: 0,left: 0}).appendTo(droppedOn);
     }
+    roundScore = 0;
+    doubleScore = 0;
+    $('#wordScore').text("Word Score:\n" + roundScore);
    }
 
 
