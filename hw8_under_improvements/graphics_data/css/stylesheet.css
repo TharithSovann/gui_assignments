@@ -1,0 +1,173 @@
+/*
+    Tharith Sovann
+    University of Massachusetts Lowell
+    Email: tharith_sovann@student.uml.edu
+    Class: COMP.4610-201 GUI Programming I HW7
+    Copyright (c) November 25th, 2020 Tharith Sovann. All rights reserved.
+    May be freely copied or excerpted for educational purposes with credit to
+    author.
+    Created on 11/22/2020
+*/
+
+/* makes the web page background color gray, might improve the design for later designs */
+body {
+  overflow: hidden;
+}
+
+#indicators {
+  margin-top: 5%;
+}
+
+#indicators > div{
+  width: 10em;
+  height: 5em;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 15px;
+  padding: 1em;
+  text-align: center;
+}
+
+#draggable {
+  width: 70px; 
+  height: 70px;
+  padding: 0.5em;
+  border-color: teal;
+  border-width: 0.5em;
+}
+
+#draggable > p {
+  font-size: 75%;
+}
+
+#scrabbleBoard {
+  padding-top: 2%;
+}
+
+#letterSlot1 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../emptySlot.PNG");
+}
+
+#letterSlot2 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../doubleLetterSlot.PNG");
+}
+
+#letterSlot3 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../emptySlot.PNG");
+}
+
+#letterSlot4 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../doubleLetterSlot.PNG");
+}
+
+#letterSlot5 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../emptySlot.PNG");
+}
+
+#letterSlot6 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../emptySlot.PNG");
+}
+
+#letterSlot7 {
+  width: 5em;
+  height: 5em;
+  background-image: url("../emptySlot.PNG");
+}
+
+.tileSlot {
+  margin-top: 2%;
+  width: 5em;
+  height: 5em;
+}
+
+.tileFromBag {
+  width: 4em;
+  height: 4em;
+}
+
+#buttonsContainer > button {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#buttonsContainer {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rack {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rack_background {
+  z-index: -1;
+  margin-top: 3%;
+  position: absolute;
+}
+
+#pageTitle {
+  margin:0 auto;
+  margin-top: 2%;
+  width:800px;
+  background-image: url("../titlePlank.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+#pageTitle > p {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  border: black;
+  border-width: 1em;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: sans; color: green;
+}
+
+#indicators {
+  margin-top: 3%;
+}
+
+#indicators > h1 {
+  font-size: small;
+}
+
+#score {
+  border-radius: 5em;
+  border-width: 1em;
+  border-color: red;
+  background: fixed;
+  background-color: greenyellow;
+}
+
+#tilesLeft {
+  border-radius: 5em;
+  border-width: 1em;
+  border-color: red;
+  background: fixed;
+  background-color: greenyellow;
+}
