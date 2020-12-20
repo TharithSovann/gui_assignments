@@ -103,17 +103,21 @@ body {
 }
 
 #buttonsContainer {
-  margin: 1%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #rack {
-  margin: 3%;
+  margin-top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#rackContainer { 
+  margin-top: 7.5%;
 }
 
 #rack_background {

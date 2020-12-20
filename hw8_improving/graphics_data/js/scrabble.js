@@ -262,14 +262,14 @@ var droppedOn_id;
     */
     function updateIndicators() {
         $('#score').text("Score:\n" + gameScore);
-
+        /*
         jQuery('<h1/>', {
             id: `tileFromBag${i}`,
             "class": 'tileFromBag ui-draggable',
             letter : letterPickedFromBag,
             points  : ScrabbleTiles[letterPickedFromBag].value,
             fromSlot   : i
-        }).appendTo(`#tileSlot${i}`);
+        }).appendTo(`#tileSlot${i}`);*/
 
         $('#tilesLeft').text("Tiles Left:\n" + tiles.length);
     }
@@ -318,6 +318,13 @@ var droppedOn_id;
     }
    }
 
+   function returnTiles() {
+    for(let i = 1; i < 8; i++){
+        dropped = (`#tileFromBag${i}`);
+        droppedOn = (`#tileSlot${i}`);
+        $(dropped).detach().css({top: 0,left: 0}).appendTo(droppedOn);
+    }
+   }
 
 
 
